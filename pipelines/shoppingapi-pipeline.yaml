@@ -42,8 +42,8 @@ stages:
         containerRegistry: 'sc-registryacme-dev'
         repository: '$(imageRepository)'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
-        buildContext: '$(Build.SourcesDirectory)/Shopping/Shopping.API'
+        Dockerfile: '**/Shopping.API/Dockerfile'
+        buildContext: '$(Build.SourcesDirectory)/Shopping'
         tags: '$(tag)'
           
     - upload: aks
