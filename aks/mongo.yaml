@@ -15,7 +15,7 @@ spec:
         app: mongodb
     spec:
       containers:
-        - name: mongodb
+        - name: mongodb 
           image: mongo
           ports:
             - containerPort: 27017
@@ -37,6 +37,8 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-root-password
+      nodeSelector: 
+        os: linux  
 ---
 apiVersion: v1
 kind: Service
