@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: shoppingclient
-          image: registryacmedev.azurecr.io/shoppingclient:v2
+          image: registryacmedev.azurecr.io/shoppingclient:latest
           imagePullPolicy: IfNotPresent          
           ports:
             - containerPort: 80
