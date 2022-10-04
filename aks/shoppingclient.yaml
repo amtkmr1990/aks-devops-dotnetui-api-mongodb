@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: shoppingclient
-          image: registryacmedev.azurecr.io/shoppingclient:latest
+          image: registryacmedev.azurecr.io/shoppingclient:latest # Azure DevOps pipeline will pass image name 
           imagePullPolicy: IfNotPresent          
           ports:
             - containerPort: 80
